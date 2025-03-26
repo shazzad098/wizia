@@ -1,13 +1,15 @@
 import './App.css'
 import Navbar from './Components/Navbar'
-import Main from './Components/Main'
+import Hero from './Components/Hero'
+import Partner from './Components/Partner'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Main />
+      <Hero />
+      <Partner />
     </>
   )
 }
