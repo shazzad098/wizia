@@ -5,6 +5,7 @@ import Partner from './Components/Partner'
 import Features from './Components/Features'
 import MarketingBanner from './Components/MarketingBanner'
 import TestimonialSlider from './Components/TestimonialSlider'
+import StateSection from './Components/StateSection'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Features />
       <MarketingBanner />
       <TestimonialSlider />
+      <StateSection />
     </>
   )
 }
