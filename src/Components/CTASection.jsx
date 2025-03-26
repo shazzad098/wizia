@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CTASection = () => {
+const CtaSection = () => {
     return (
         <section className="bg-[#002228] text-white py-16">
             <div className="container mx-auto px-4 flex flex-col items-center space-y-4 ">
@@ -26,4 +26,4 @@ const CTASection = () => {
     );
 };
 
-export default CTASection;
+export default CtaSection;
