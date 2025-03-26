@@ -3,10 +3,10 @@ import React from 'react';
 const CTASection = () => {
     return (
         <section className="bg-[#002228] text-white py-16">
-            <div className="container mx-auto px-4 flex flex-col items-center space-y-4">
+            <div className="container mx-auto px-4 flex flex-col items-center space-y-4 ">
                 <span className="text-sm uppercase font-bold tracking-wider text-[#0FF1F6]">GET STARTED</span>
 
-                <h2 className="text-3xl">
+                <h2 className="text-3xl text-center">
                     <i>Embrace </i><span className="font-bold">the new era</span> <i>of outbound</i>.
                 </h2>
 
