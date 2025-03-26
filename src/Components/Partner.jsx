@@ -10,7 +10,7 @@ const Partner = () => {
   ];
 
   return (
-    <section className="bg-gray-800 text-white py-2">
+    <section className="bg-[#07292F] text-white py-2">
       <div className="container mx-auto px-4 flex justify-center items-center">
         <h2 className="text-sm text-main uppercase tracking-wider mt-4">Our Trusted Partners</h2>
       </div>
