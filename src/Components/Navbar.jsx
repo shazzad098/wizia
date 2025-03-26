@@ -4,97 +4,115 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
   Link,
   Button,
 } from "@heroui/react";
 
-
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "About Us",
+    "Pricing",
+    "Customers",
+    "Solutions",
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#002228]">
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
+    <Navbar className="bg-[#002228] relative">
+      <NavbarContent className="flex justify-between items-center">
         <NavbarBrand>
-          <img src="Logo.png" alt="" />
+          <img src="Logo.png" alt="Wizia" />
         </NavbarBrand>
 
+        <div className="sm:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="focus:outline-none"
+          >
+            <img
+              src="/hamburger.png"
+              alt="Menu"
+              className="h-6 w-6"
+            />
+          </button>
+        </div>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link className="text-white hover:text-main" href="#">
-            About Us
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white hover:text-main" href="#">
-            Pricing
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white hover:text-main" color="foreground" href="#">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-white hover:text-main" color="foreground" href="#">
-            Solutions
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4 justify-center">
+        {menuItems.map((item, index) => (
+          <NavbarItem key={index}>
+            <Link className="text-white hover:text-main" href="#">
+              {item}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Button className="text-black rounded-full bg-main" as={Link} href="#" variant="flat">
+
+      <NavbarContent justify="end" className="hidden sm:flex">
+        <NavbarItem>
+          <Button
+            className="text-black rounded-full bg-main mr-2"
+            as={Link}
+            href="#"
+            variant="flat"
+          >
             Book a Demo
           </Button>
-
         </NavbarItem>
         <NavbarItem>
-          <Button className="text-white rounded-full bg-transparent border" as={Link} href="#" variant="flat">
+          <Button
+            className="text-white rounded-full bg-transparent border"
+            as={Link}
+            href="#"
+            variant="flat"
+          >
             Contact Us
           </Button>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu
+        className={`${isMenuOpen ? "block" : "hidden"
+          } sm:hidden absolute top-full left-0 right-0 bg-[#002228] py-4 z-50`}
+      >
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={index}>
             <Link
-              className="w-full"
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
+              className="w-full text-white hover:text-main py-2 block px-4"
               href="#"
-              size="lg"
             >
               {item}
             </Link>
           </NavbarMenuItem>
         ))}
+
+        <NavbarMenuItem>
+          <Button
+            className="text-black rounded-full bg-main w-full my-2 mx-4"
+            as={Link}
+            href="#"
+            variant="flat"
+          >
+            Book a Demo
+          </Button>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Button
+            className="text-white rounded-full bg-transparent border w-full mx-4"
+            as={Link}
+            href="#"
+            variant="flat"
+          >
+            Contact Us
+          </Button>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
 }
 
-export default NavbarArea
+export default NavbarArea;
