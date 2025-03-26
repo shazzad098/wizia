@@ -5,7 +5,7 @@ const StateSection = () => {
         <section
             className="bg-gray-800 text-white py-16 relative"
             style={{
-                backgroundImage: `url(/bg-3.png)`,
+                backgroundImage: `url(BG/bg-3.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}

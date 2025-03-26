@@ -43,22 +43,22 @@ function NavbarArea() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white hover:text-main" href="#">
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white hover:text-main" href="#">
             Pricing
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" color="foreground" href="#">
+          <Link className="text-white hover:text-main" color="foreground" href="#">
             Customers
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" color="foreground" href="#">
+          <Link className="text-white hover:text-main" color="foreground" href="#">
             Solutions
           </Link>
         </NavbarItem>

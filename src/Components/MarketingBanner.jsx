@@ -5,7 +5,7 @@ const MarketingBanner = () => {
         <section
             className="bg-gray-800 text-white py-20 relative"
             style={{
-                backgroundImage: `url(/bg-2.png)`,
+                backgroundImage: `url(BG/bg-2.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}

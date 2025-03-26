@@ -3,7 +3,7 @@ import { Button } from "@heroui/react"
 
 function Hero() {
     return (
-        <section className='bg-[url(bg-1.png)] bg-no-repeat bg-cover min-h-screen flex flex-col justify-center px-4 md:px-8 w-full'>
+        <section className='bg-[url(BG/bg-1.png)] bg-no-repeat bg-cover min-h-screen flex flex-col justify-center px-4 md:px-8 w-full'>
             <div className='w-[80%] mx-auto space-y-8'>
                 <div>
                     <p className="text-main text-lg mb-4">AI SDRs (aiDRs)</p>
