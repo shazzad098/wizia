@@ -6,7 +6,7 @@ import Features from './Components/Features'
 import MarketingBanner from './Components/MarketingBanner'
 import TestimonialSlider from './Components/TestimonialSlider'
 import StateSection from './Components/StateSection'
-import CTASection from './Components/CTAsection'
+import CtaSection from './Components/CtaSection'
 import Footer from './Components/Footer'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <MarketingBanner />
       <TestimonialSlider />
       <StateSection />
-      <CTASection />
+      <CtaSection />
       <Footer />
     </>
   )
