@@ -6,8 +6,8 @@ import Features from './Components/Features'
 import MarketingBanner from './Components/MarketingBanner'
 import TestimonialSlider from './Components/TestimonialSlider'
 import StateSection from './Components/StateSection'
-import Ctasection from './Components/Ctasection'
 import Footer from './Components/Footer'
+import Ctasection from './Components/Ctasection'
 
 function App() {
 
