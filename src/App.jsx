@@ -7,7 +7,7 @@ import MarketingBanner from './Components/MarketingBanner'
 import TestimonialSlider from './Components/TestimonialSlider'
 import StateSection from './Components/StateSection'
 import Footer from './Components/Footer'
-
+import CSection from './Components/CSection'
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
       <TestimonialSlider />
       <StateSection />
       <Footer />
+      <CSection />
     </>
   )
 }
